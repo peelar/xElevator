@@ -1,9 +1,16 @@
+import "./App.css";
+import { Elevator } from "./Elevator";
+
+import { ChakraProvider } from "@chakra-ui/react";
+
 function App() {
   return (
-    <main>
-      Halo
-    </main>
-  )
+    <ChakraProvider>
+      <main>
+        <Elevator />
+      </main>
+    </ChakraProvider>
+  );
 }
 
-export default App
+export default App;
